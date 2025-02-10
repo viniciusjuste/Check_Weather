@@ -1,1 +1,7 @@
-<p>weather works!</p>
+<form class="form-inline">
+  <div class="form-group">
+    <label for="city" class="sr-only">City</label>
+    <input type="text" class="form-control" id="city" placeholder="City" [(ngModel)]="city" name="city">
+  </div>
+  <button type="submit" class="btn btn-primary mt-3" (click)="getWeatherInRealTime()">Buscar</button>
+</form>
