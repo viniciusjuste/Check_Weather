@@ -15,9 +15,9 @@ export class WeatherService {
    * @param city a cidade para a qual se deseja obter o clima.
    * @returns um observable que emite um objeto com o clima atual.
    */
-  getWeatherInRealTime(city: string): Observable<any> {
+  getWeatherInRealTime(city: string): Observable<unknown> {
     const url = `${this.apiUrl}?key=${this.apiKey}&q=${city}&aqi=no`;
-    return this.http.get<any>(url);
+    return this.http.get<unknown>(url);
   }
   
 

@@ -7,7 +7,7 @@ import { WeatherService } from '../../services/weather.service';
   styleUrl: './weather.component.css'
 })
 export class WeatherComponent implements OnInit {
-  weatherData: any;
+  weatherData: unknown;
   city: string = '';
   ngOnInit(): void {
     this.getWeatherInRealTime()
@@ -24,7 +24,7 @@ export class WeatherComponent implements OnInit {
    */
   getWeatherInRealTime(): void {
     this.weatherService.getWeatherInRealTime(this.city).subscribe(
-      (data: any) => {
+      (data: unknown) => {
         this.weatherData = data;
         console.log('Dados:', this.weatherData);
       }, (error) => {
