@@ -1,7 +1,9 @@
-<form class="form-inline">
-  <div class="form-group">
-    <label for="city" class="sr-only">City</label>
-    <input type="text" class="form-control" id="city" placeholder="City" [(ngModel)]="city" name="city">
+<div class="container">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="City" aria-label="city" aria-describedby="button-addon2"
+      [(ngModel)]="city">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="getWeatherInRealTime()"><i
+        class="fa-solid fa-magnifying-glass" style="color: #333;"></i></button>
   </div>
-  <button type="submit" class="btn btn-primary mt-3" (click)="getWeatherInRealTime()">Buscar</button>
-</form>
+</div>
+
