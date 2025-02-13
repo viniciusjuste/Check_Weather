@@ -1,9 +1,62 @@
-<div class="container">
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="City" aria-label="city" aria-describedby="button-addon2"
-      [(ngModel)]="city">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="getWeatherInRealTime()"><i
-        class="fa-solid fa-magnifying-glass" style="color: #333;"></i></button>
-  </div>
-</div>
+  <div class="background-image">
+    <div class="container">
+      <div class="row row-weather">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="City" aria-label="city" aria-describedby="button-addon2"
+            [(ngModel)]="city">
+          <button class="btn btn-search btn-outline-secondary" type="button" id="button-addon2" (click)="getWeatherInRealTime()"><i
+              class="fa-solid fa-magnifying-glass" style="color: #FFFF;"></i></button>
+        </div>
+          <div class="weather-card">
+            <!-- Título da cidade -->
+            <h2>Nome da Cidade</h2>
+            <p>Data ou Hora</p>
+        
+            <!-- Corpo do card -->
+            <div class="weather-body">
+              <!-- Ícone do clima -->
+              <div class="weather-icon">
+                <i class="fa-solid fa-sun"></i> <!-- Ícone do clima -->
+              </div>
+        
+              <!-- Temperatura -->
+              <div class="temperature">
+                <h3>24°C</h3> <!-- Temperatura -->
+              </div>
+        
+              <!-- Descrição do clima -->
+              <div class="weather-description">
+                <p>Clima ensolarado com poucas nuvens.</p> <!-- Descrição do clima -->
+              </div>
+            </div>
+        
+            <!-- Informações adicionais: Umidade, Vento, Pressão e Chuva -->
+            <div class="weather-info">
+              <div class="humidity">
+                <i class="fa-solid fa-droplet"></i> <!-- Ícone de umidade -->
+                <span>Umidade</span>
+                <span>65%</span> <!-- Umidade -->
+              </div>
+              <div>
+                <i class="fa-solid fa-wind"></i> <!-- Ícone de vento -->
+                <span>Vento</span>
+                <span>15 km/h</span> <!-- Velocidade do vento -->
+              </div>
+              <div>
+                <i class="fa-solid fa-tachometer-alt"></i> <!-- Ícone de pressão -->
+                <span>Pressão</span>
+                <span>1012 hPa</span> <!-- Pressão atmosférica -->
+              </div>
+              <div class="rain">
+                <i class="fa-solid fa-cloud-showers-heavy"></i> <!-- Ícone de chuva -->
+                <span>Chuva</span>
+                <span>30%</span> <!-- Percentual de chuva -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+  
+  
