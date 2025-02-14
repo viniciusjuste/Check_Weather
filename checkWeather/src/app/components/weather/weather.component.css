@@ -64,6 +64,12 @@
     align-items: center;
 }
 
+.temp-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .weather-icon i {
     font-size: 50px;
     color: #f39c12;
@@ -108,4 +114,8 @@
 
 .weather-info .humidity i {
     color: #3498db;
+}
+
+.hidden {
+    display: none;
 }
