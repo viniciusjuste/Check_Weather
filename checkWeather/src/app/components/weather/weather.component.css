@@ -119,3 +119,31 @@
 .hidden {
     display: none;
 }
+
+/* Media query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .input-group {
+        width: 80%; 
+    }
+    
+    .weather-card {
+        width: 90%; 
+        padding: 20px; 
+    }
+    
+    .temperature h3 {
+        font-size: 36px; 
+    }
+    
+    .weather-icon i {
+        font-size: 40px; 
+    }
+    
+    .weather-info {
+        align-items: center;
+    }
+    
+    .weather-info div {
+        margin-bottom: 10px;
+    }
+}
